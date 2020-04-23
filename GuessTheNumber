@@ -1,0 +1,39 @@
+namespace GuessTheNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int randomNumber = r.Next(1, 100);
+            int userNumber;
+            Console.WriteLine("Guess a Number From 1 - 100.");
+            
+            do
+            {
+                userNumber = GetUserNumber();
+                if (userNumber < randomNumber)
+                {
+                    Console.WriteLine("Too low, guess again!");
+                }
+                else if (userNumber > randomNumber)
+                {
+                    Console.WriteLine("Too high, guess again!");
+                }
+                else if (userNumber == randomNumber)
+                {
+                    Console.WriteLine("Congratulations, you guessed correctly!");
+                    break;
+                }
+            } while (userNumber != randomNumber);
+
+
+        } // end main
+        static int GetUserNumber()
+        {
+            int userNumber = int.Parse(Console.ReadLine());
+            return userNumber;
+        }
+    } 
+
+}
