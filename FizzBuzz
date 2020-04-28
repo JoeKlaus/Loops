@@ -1,5 +1,10 @@
 namespace FizzBuzz
 {
+// Write a C# program (probably all in Main) that prints out the numbers from 1 to 100, each one on a separate line. 
+// In addition, for every number that is divisible by 3, next to the number, print out the word "Fizz". 
+// In addition, for every number that is divisible by 5, next to the number, print out the word "Buzz". 
+// If a number is divisible by both 3 and 5, next to the number, print out the words "Fizz Buzz".
+
     class Program
     {
         static void Main(string[] args)
